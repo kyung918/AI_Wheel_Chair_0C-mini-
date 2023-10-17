@@ -1,0 +1,95 @@
+<html>
+<body>
+<pre>
+<h1>µVision Build Log</h1>
+<h2>Tool Versions:</h2>
+IDE-Version: •ÏVision V5.32.0.0
+Copyright (C) 2020 ARM Ltd and ARM Germany GmbH. All rights reserved.
+License Information: kyungsoo kim, 123, LIC=8MZI6-DG1SY-WK5B8-3FP9U-SI4FL-RN5CJ
+ 
+Tool Versions:
+Toolchain:       MDK-ARM Professional  Version: 5.32.0.0
+Toolchain Path:  C:\Keil_v5\ARM\ARMCC\Bin
+C Compiler:      Armcc.exe V5.06 update 7 (build 960)
+Assembler:       Armasm.exe V5.06 update 7 (build 960)
+Linker/Locator:  ArmLink.exe V5.06 update 7 (build 960)
+Library Manager: ArmAr.exe V5.06 update 7 (build 960)
+Hex Converter:   FromElf.exe V5.06 update 7 (build 960)
+CPU DLL:         SARMCM3.DLL V5.32.0.0
+Dialog DLL:      DCM.DLL V1.17.3.0
+Target DLL:      Segger\JL2CM3.dll V2.99.38.0
+Dialog DLL:      TCM.DLL V1.46.0.0
+ 
+<h2>Project:</h2>
+D:\_Source\Wave.ai\Ai_Wheel_Chair_0C(mini)_231016\MDK-ARM\Ai_Wheel_Chair_0C.uvprojx
+Project File Date:  10/16/2023
+
+<h2>Output:</h2>
+*** Using Compiler 'V5.06 update 7 (build 960)', folder: 'C:\Keil_v5\ARM\ARMCC\Bin'
+Build target 'Ai_Wheel_Chair_0C'
+compiling adc.c...
+../Core/Inc/usart.h(140): warning:  #1295-D: Deprecated declaration ibus_read - give arg types
+  bool ibus_read();
+../Core/Inc/usart.h(144): warning:  #1295-D: Deprecated declaration ibus_is_valid - give arg types
+  bool ibus_is_valid();
+../Core/Inc/usart.h(145): warning:  #1295-D: Deprecated declaration ibus_checksum - give arg types
+  bool ibus_checksum();
+../Core/Inc/usart.h(146): warning:  #1295-D: Deprecated declaration ibus_update - give arg types
+  void ibus_update();
+../Core/Inc/usart.h(148): warning:  #1295-D: Deprecated declaration ibus_reset_failsafe - give arg types
+  void ibus_reset_failsafe();
+../Core/Src/adc.c: 5 warnings, 0 errors
+compiling usart.c...
+../Core/Inc/usart.h(140): warning:  #1295-D: Deprecated declaration ibus_read - give arg types
+  bool ibus_read();
+../Core/Inc/usart.h(144): warning:  #1295-D: Deprecated declaration ibus_is_valid - give arg types
+  bool ibus_is_valid();
+../Core/Inc/usart.h(145): warning:  #1295-D: Deprecated declaration ibus_checksum - give arg types
+  bool ibus_checksum();
+../Core/Inc/usart.h(146): warning:  #1295-D: Deprecated declaration ibus_update - give arg types
+  void ibus_update();
+../Core/Inc/usart.h(148): warning:  #1295-D: Deprecated declaration ibus_reset_failsafe - give arg types
+  void ibus_reset_failsafe();
+../Core/Src/usart.c(538): warning:  #174-D: expression has no effect
+       nRPM_L, nRPM_R = 0;
+../Core/Src/usart.c(851): warning:  #223-D: function "SerialToCanSendProcess" declared implicitly
+  					SerialToCanSendProcess(ptr->Buf);
+../Core/Src/usart.c(863): warning:  #111-D: statement is unreachable
+  		CommBufClear(port);
+../Core/Src/usart.c(925): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "char *"
+  		ucSendData[12] = (char) GetCheckSum(12, ucSendData);
+../Core/Src/usart.c(931): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "char *"
+  		ucSendData[8] = (char) GetCheckSum(8, ucSendData);
+../Core/Src/usart.c(1042): warning:  #223-D: function "round" declared implicitly
+  		fV = round(((channels[1] / 10) - 100) *  (float)(30.0 / 138.0)* 0.1);
+../Core/Src/usart.c: 11 warnings, 0 errors
+linking...
+Program Size: Code=17160 RO-data=392 RW-data=268 ZI-data=24476  
+FromELF: creating hex file...
+"Ai_Wheel_Chair_0C\Ai_Wheel_Chair_0C.axf" - 0 Error(s), 16 Warning(s).
+
+<h2>Software Packages used:</h2>
+
+Package Vendor: ARM
+                http://www.keil.com/pack/ARM.CMSIS.5.7.0.pack
+                ARM.CMSIS.5.7.0
+                CMSIS (Cortex Microcontroller Software Interface Standard)
+   * Component: CORE Version: 5.4.0
+
+Package Vendor: Keil
+                https://www.keil.com/pack/Keil.STM32F1xx_DFP.2.4.1.pack
+                Keil.STM32F1xx_DFP.2.4.1
+                STMicroelectronics STM32F1 Series Device Support, Drivers and Examples
+
+<h2>Collection of Component include folders:</h2>
+  .\RTE\_Ai_Wheel_Chair_0C
+  C:\Users\Kyungsoo\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\Core\Include
+  C:\Users\Kyungsoo\AppData\Local\Arm\Packs\Keil\STM32F1xx_DFP\2.4.1\Device\Include
+
+<h2>Collection of Component Files used:</h2>
+
+   * Component: ARM::CMSIS:CORE:5.4.0
+Build Time Elapsed:  00:00:05
+</pre>
+</body>
+</html>
